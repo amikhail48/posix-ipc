@@ -1,0 +1,18 @@
+# Build settings
+build --cxxopt=-std=c++17  # Use C++17 standard (adjust if needed)
+# build --compiler=gcc      # Specify the compiler if needed, e.g., gcc, clang
+
+# Test settings
+test --test_output=errors  # Show errors from tests
+test --test_env=PATH=/usr/local/bin:/usr/bin:/bin  # Example of setting environment variables for tests
+
+# General settings
+build --jobs=4             # Use 4 parallel jobs for builds
+build --color=yes          # Enable colored output in build logs
+build --show_progress=true # Show build progress in the terminaln
+# build --keep_going         # Continue building even if some targets fail
+
+# Disable Bazel Modules (bzlmod)
+build --noenable_bzlmod    # Ensure Bazel Modules are disabled
+
+# Additional settings can be added as needed
