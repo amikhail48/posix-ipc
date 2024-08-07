@@ -18,6 +18,10 @@ The `NonBlockingSHM` class provides a non-blocking interface for POSIX Shared Me
 
 The `NonBlockingPipe` class provides a non-blocking interface for named pipes (FIFO), supporting generic data transport.
 
+### UNIX Domain Sockets
+
+The `NonBlockingUnixSocket` class provides a non-blocking interface for UNIX domain sockets, allowing for inter-process communication on the same machine.
+
 ## Prerequisites
 
 - C++ compiler supporting C++11 or later
@@ -44,10 +48,14 @@ Ensure Bazel is installed on your system. You can download and install Bazel fro
 │   ├── BUILD
 │   ├── non_blocking_pipe.hpp
 │   └── test_pipe.cpp
-└── shm
+├── shm
+│   ├── BUILD
+│   ├── non_blocking_shm.hpp
+│   └── test_shm.cpp
+└── socket
     ├── BUILD
-    ├── non_blocking_shm.hpp
-    └── test_shm.cpp
+    ├── non_blocking_unix_socket.hpp
+    └── test_socket.cpp
 
 ## Usage
 
@@ -60,4 +68,7 @@ Ensure Bazel is installed on your system. You can download and install Bazel fro
 ```
 ```bash
     bazel run shm:non_blocking_shm
+```
+```bash
+    bazel run socket:non_blocking_socket
 ```
