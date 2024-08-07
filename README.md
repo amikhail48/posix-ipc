@@ -1,4 +1,4 @@
-# linux-utils
+# POSIX IPC Utilities
 
 # IPC Wrappers for POSIX Message Queues, Shared Memory, and Pipes
 
