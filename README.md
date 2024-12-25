@@ -35,7 +35,7 @@ The `NonBlockingUnixSocket` class provides a non-blocking interface for UNIX dom
 Ensure Bazel is installed on your system. You can download and install Bazel from the [Bazel website](https://bazel.build/).
 
 ### Project Structure
-
+```
 .
 ├── LICENSE
 ├── README.md
@@ -56,6 +56,7 @@ Ensure Bazel is installed on your system. You can download and install Bazel fro
     ├── BUILD
     ├── non_blocking_unix_socket.hpp
     └── test_socket.cpp
+```
 
 ## Usage
 
